@@ -1,0 +1,271 @@
+/*------ Colors (change these to restyle everything) ------ */
+:root {
+    --bg: #1d1a1a;
+    --bg-alt: #17181a;
+    --text: #dfe3e8;
+    --primary: #2563eb;
+    --card: #121111;
+}
+
+/*---- Basics ------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height:1.6;
+}
+
+a {
+    color: var(--primary);
+}
+
+/*-------- Navbar ---------*/
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: var(--bg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    color: var(--primary);
+}
+
+#theme-toggle {
+    margin-left: 20px;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* ------- Hero ------- */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.profile-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 30%;
+    object-fit: cover;
+    border: 4px solid var(--primary);
+    margin: bottom 20px;
+}
+
+.hero h1 {
+    font-size:2.8rem;
+
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    margin: 15px 0 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--primary);
+    color: #f3e8e8;
+    border: none;
+    border-radius: 6px;
+    text-direction: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* -------- Sections--------- */
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section.alt {
+    background: var(--bg-alt);
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.section p {
+    max-width: 700px;
+    margin: 0 auto 10px;
+}
+
+/*---------Skills------------*/
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skill {
+    background: var(--primary);
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+.platforms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap : 12px;
+}
+
+.platform {
+    background: var(--primary);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius:20px;
+}
+
+/*----------- Project cards--------*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: var(--card);
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    text-align: left;
+    translation: transform 0.2s; 
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 12px 28px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+/*------- Contact form -------- */
+
+form {
+    max-width: 500px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #9ca3af;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+#form-status {
+    font-weight: bold;
+}
+
+.my-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0a66c2; /* LinkedIn blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.you-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #c26f0a; /* Stack Overflow */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #004182;
+}
+
+.btn:active {
+   transform: scale(0.96);  /*small "press" effect */
+}
+
+/* ----------Footer ---------*/
+footer {
+    text-align:center;
+    padding: 20px;
+    background: var(--bg-alt);
+}
+
+/*--------Mobile screens using media query -------------*/
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+}

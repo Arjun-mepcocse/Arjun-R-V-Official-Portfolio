@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>R V Arjun</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <header class = "navbar">
+        <h2 class = "logo">R V Arjun</h2>
+        <nav>
+            <a href = "#about">About</a>
+            <a href = "#skills">Skills</a>
+            <a href = "#projects">Projects</a>
+            <a href = "#events">Events</a>
+            <a href = "#contact">Contact</a>
+            <a href = "about.html">Achievement</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+     <section class = "hero">
+        <img src = "WhatsApp Image 2026-09-21 at 19.33.44.jpeg" alt="Photo of R V Arjun" class = "profile-photo">
+        <h1>Hi, I'm<span class = "highlight"> R V Arjun</span></h1>
+        <p id = "typing-text" class = "subtitle">Software Developer </p>
+        <a href = "#projects" class = "btn">View My Work</a>
+     </section>
+
+     <!--ABOUT-->
+     <section id = "about" class = "about">
+        <h2>About Me</h2>
+        <p>I'm a Computer Science and Engineering graduate from Mepco Schlenk
+      Engineering College, based in Sivakasi. I'm currently working as a
+      Full-Stack Java Developer Intern, building applications with Java
+      and Spring Boot and did a Snowflake SQL project. I enjoy turning ideas into working software and
+      I always like to learning something new. I have did Infosys certifications in DBMS, NoSQL, MySQL. 
+        </p>
+     </section>
+
+     <!--skills-->
+     <section id = "skills" class = "section alt">
+        <h2>Skills</h2>
+        <div class = "skills">
+            <span class = "skill">Java</span>
+            <span class = "skill">Spring Boot</span>
+            <span class = "skill">HTML</span>
+            <span class = "skill">CSS</span>
+            <span class = "skill">JavaScript</span>
+            <span class = "skill">Git</span>    
+            <span class = "skill">REST APIs</span>
+            <span class = "skill">SQL</span>
+            <span class = "skill">Mobile Application</span>
+        </div>
+        <h2>Platform</h2>
+        <div class = "platforms">
+            <span class = "platform">Ubuntu Terminal</span>
+            <span class = "platform">Eclipse</span>
+            <span class = "platform">Spring</span>
+            <span class = "platform">VS Studio Code</span>
+            <span class = "platform">Andriod Studio Code</span>
+        </div>
+     </section>
+
+     <!--PROJECTS -->
+     <section id = "projects" class = "section">
+        <h2>Projects</h2>
+        <div class = "cards">
+
+            <div class = "card">
+                <h3>Coin Toss Application</h3>
+                <p>Built with Java and Spring Boot. Handles the toss logic, duplicate-request protection with unique toss IDs, transactions and an audit log.</p>
+                <a href = "https://github.com/Arjun-mepcocse/Coin-Toss-App" target = "_blank"> View on Github</a>
+            </div>
+
+            <div class = "card">
+                <h3>UPI Digital Payment & Wallet Management System</h3>
+                <p>A wallet management system for digital payments, with the data layer built in Snowflake SQL</p>
+                <a href = "https://github.com/Arjun-mepcocse/UPI-Based-Digital-Payment-and-Wallet-Management-System" target = "_blank"> View on Github</a>
+            </div>
+
+            <div class = "card">
+                <h3>Project Management System</h3>
+                <p>A Java application using object-oriented design and a MySQL database to manage projects.</p>
+                <a href = "https://github.com/Arjun-mepcocse/ProjectManagementSystem.java" target = "_blank"> View on Github</a>
+            </div>
+        </div>
+     </section>
+
+     <!--EVENTS -->
+     <section id = "events" class = "section">
+        <h2>Events Attended</h2>
+        <div class = "cards">
+            <div class = "cards">
+                <div class = "cards">
+                    <h3>Google Devfest</h3>
+                    <p>The day opened with a keynote from Sanju Sivalingam of AGI, Inc., titled “The next billion users won't be human.” The live demo of an AI agent operating a real phone, finding movie showtimes and then pausing for confirmation before payment, made the idea concrete. As agents start acting on our behalf, the real design questions become trust, verification, and knowing when a human should stay in the loop</p>
+                    <a href = "https://www.linkedin.com/feed/update/urn:li:activity:7517276956384509952/" target = "_blank">View in detail</a>
+                </div>
+                <div class = "cards">
+                    <h3>MERN Stack Workshop</h3>
+                    <p>Attended a MERN Stack workshop at Kongu College of Engineering and Technology (2024), gaining practical exposure to full-stack development and to using sandbox environments for building, testing, and sharing code quickly. The experience strengthened my understanding of how the MERN components work together and inspired me to build more full-stack projects.</p>
+                    <img src="Screenshot 2026-10-22 195934.png" alt = "MERN" width="200" height="200">
+                </div>
+            </div>
+        </div>
+     </section>
+
+        <!--CONTACT-->
+        <section id = "contact" class = "section alt">
+            <h2>Contact Me</h2>
+            <p>Email: <a href = "mailto:r.v.arjun.b.e@gmail.com">r.v.arjun.b.e@gmail.com</a></p>
+            <p>Github: <a href = "https://github.com/Arjun-mepcocse" target = "_blank">Github</a></p>
+            <p>Phone Number: +91 9384395731</p>
+            <button id="my-btn" class="btn">LinkedIn</button>
+            <p id = "message"></p>
+            <button id = "you-btn" class="btn">Stack Overflow</button>
+            <p id = "message"></p>
+
+            <form id = "contact-form">
+                <input type = "text" name = "name" placeholder = "Your name">
+                <input type = "email" name = "email" placeholder = "Your email">
+                <textarea name = "message" rows = "4" placeholder = "Your message"></textarea>
+                <button type = "submit">Send</button>
+                <p id = "form-response"></p>
+            </form>
+        </section>
+
+        <!--ACHIEVEMENTS-->
+        <section id = "achievements" class = "section alt">
+            <h2>Achievements</h2>
+             <a href = "about.html" class = "btn"></a>
+        </section>
+
+        <footer>
+            <address>Chennai, TamilNadu</address>
+            <p><span id = "year"></span> R V Arjun.</p>
+        </footer>
+
+        <script src = "script.js"></script>
+</body>
+</html>
